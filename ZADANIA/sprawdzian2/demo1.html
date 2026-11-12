@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 02</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt(`Podaj wartosc a:`,``))
+
+
+    if(isNaN(a)){
+        document.write('Podano zła wartosc')
+    }else if(a % 4 === 0 &&(a % 100 !== 0 || a % 400 === 0)){
+        document.write(`rok jest przestepny`)
+    }else{
+        document.write('rok jest nieprzestepny')
+    }
+</script>
+</body>
+</html>
