@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z02-średnia arytmetyczna</title>
+</head>
+<body>
+<script>
+    let a = prompt('Podaj a: ','');
+    let b = prompt('Podaj b: ','');
+    let c = prompt('Podaj c: ','');
+    let d = prompt('podaj d: ','');
+    a  = parseFloat(a)
+    b  = parseFloat(b)
+    c  = parseFloat(c)
+    d  = parseFloat(d)
+
+    let srednia = (a+b+c+d)/4;
+    document.write('a = '+a+'<br>');
+    document.write('b = '+b+'<br>');
+    document.write('c = '+c+'<br>');
+    document.write('d = '+d+'<br>');
+    document.write('suma liczb = '+(a+b+c+d)+'<br>');
+    document.write('Średnia liczb wynosi: '+srednia+'<br>')
+    document.write('Średnia zaokrąglona:'+srednia.toFixed(3)+'<br>')
+</script>
+
+</body>
+</html>

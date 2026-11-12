@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>T03 - Porównanie programowania obiektowego i strukturalnego.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>T03 - Porównanie programowania obiektowego i strukturalnego.</h1>
+    <h2>Autor : Kacper Kita</h2>
+    <hr>
+</header>
+<main>
+    <section>
+        <h1>Programowanie strukturalne</h1>
+        <p> Paradygmat programowania zakładający rozdzielenie
+            funkcjonalności programu na moduły (podprogramy).
+            Komunikują się one ze sobą przez określone interfejsy.</p>
+        <p> Jest rozszerzeniem programowania proceduralnego
+            (poprawa przejrzystości i jakości kodu oraz
+            przyśpieszenie tworzenia oprogramowania).</p>
+
+        <h2>Założenia programowania strukturalnego</h2>
+        <ul>
+            <li>Podzielone bloki kodu mają jeden punkt wejścia (mogą
+                mieć wiele punktów wyjścia)</li>
+            <li>Wykonywanie wyrażeń w określonej kolejności</li>
+            <li>Używanie instrukcji warunkowych (if , if else)</li>
+            <li>Używanie pętli (for, while, do while)</li>
+            <li>Unikanie instrukcji skoku (goto)</li>
+            <li>Unikanie instrukcji break, continue</li>
+        </ul>
+    </section>
+    <section>
+        <h1>Programowanie obiektowe</h1>
+        <p> Paradygmat programowania zakładający reprezentację
+            problemów w postaci obiektów, przypisanie im działań
+            (metod), które mogą wykonywać oraz umieszczenie pól,
+            które opisują dany obiekt.</p>
+        <p> Jest to podejście bardziej naturalne dla ludzi, bardziej
+            zgodne z rzeczywistością.</p>
+        <h1>Założenia programowania obiektowego</h1>
+        <ul>
+            <li>Abstrakcja</li>
+            <li>Hermetyzacja danych (enkapsulacja)</li>
+            <li>Dziedziczenie</li>
+            <li>Polimorfizm</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Abstrakcja</h2>
+        <p> Zredukowanie właściwości opisywanego obiektu do
+            najbardziej podstawowych, ograniczenie zakresu
+            funkcjonalności obiektu do kluczowych dla danego
+            zagadnienia działań.</p>
+        <p> Ukrycie funkcjonalności za interfejsem, uogólnienie
+            implementacji.</p>
+    </section>
+    <section>
+        <h2>Enkapsulacja</h2>
+        <p> Inaczej hermetyzacja danych.</p>
+        <p> Dostęp do składowych jest ograniczony za pomocą
+            dobrze określonego interfejsu, czyli obiekt udostępnia
+            tylko pewien zbiór metod, które są widoczne z zewnątrz i
+            mogą być wywoływane.</p>
+        <p> Dostęp do pól obiektu powinien być realizowany poprzez
+            odpowiednie metody(Settery/gettery) a nie przez
+            bezpośredni dostęp do nich.</p>
+    </section>
+    <section>
+        <h2>Dziedziczenie</h2>
+        <p> Mechanizm umożliwiający wywodzenie nowych klas z klas
+            już istniejących, wraz z przejmowaniem ich metod. Dzięki
+            czemu zyskujemy wszystkie już istniejące funkcjonalności,
+            które dodatkowo możemy rozszerzyć lub zmienić.</p>
+    </section>
+    <section>
+        <h2>Polimorfizm</h2>
+        <p> Mechanizm pozwalający na używanie metod itp. na różny
+            sposób, np. przeciążając metodę toString, aby akceptowała
+            zmienne typu int, float, decimal i każdą z nich
+            konwertowała właściwie do ciągu znakowego.</p>
+    </section>
+</main>
+
+</body>
+</html>

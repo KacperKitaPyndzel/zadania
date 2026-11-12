@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>T03a - Programowanie Strukturalne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>T03a - Programowanie strukturalne</h1>
+    <h2>Autor : Kacper Kita</h2>
+</header>
+<main>
+    <section>
+        <h1>Programowanie Strukturalne</h1>
+        <p> W programowaniu strukturalnym kod programu jest dzielony na hierarchicznie ułożone
+            bloki. Program tworzony jest z wcześniej zdefiniowanych struktur, takich jak sekwencja
+            (ciąg kolejnych instrukcji), instrukcja warunkowa (if, if...else), pętla (while, repeat), instrukcja wyboru. Struktury te są stosowane do małych bloków programu
+            zawierających podstawowe instrukcje typu podstawienia, wejścia-wyjścia lub wywołania
+            procedur i funkcji. Dzięki temu kod jest przejrzysty i łatwy w utrzymaniu.</p>
+        <p> Występujące w językach strukturalnych instrukcje skoku (goto) lub przerwania (continue, switch) są niezgodne z zasadami strukturalności, ale pojawiają się w językach
+            programowania, ponieważ zwiększają czytelność programu.</p>
+        <p> Prawie w każdym języku można programować strukturalnie. Jednak niektóre z nich są
+            do tego celu specjalnie przeznaczone. Modelowym przykładem języka strukturalnego
+            był język Pascal.</p>
+        <p> Reasumując: programowanie strukturalne zachęca do dzielenia programu na bloki
+            (moduły, podprogramy), a powstałych bloków na mniejsze jednostki w kolejności wykonywania. Wykorzystuje instrukcje sterowania i pętle do kontrolowania przebiegu
+            programu. K od staje się dzięki temu bardziej przejrzysty i wzrasta jego wydajność.</p>
+        <p> Sposób programowania w tym paradygmacie może być różny w zależności od zastosowanego systemu operacyjnego i języka programowania. Jednak podstawowe zasady
+            programowania powinny zostać niezmienne. </p>
+        <h1>Zmienna</h1>
+        <p> Jednym z podstawowych elementów języków programowania jest zmienna. Jest ona
+            abstrakcją komórki pamięci komputera. Każdą zmienną można opisać za pomocą
+            nazwy, adresu, wartości, typu, okresu życia i zakresu widoczności.
+        </p>
+        <ul>
+            <li>Nazwa — określa nazwę, przez którą następuje odwołanie do zmiennej. Dla nazwy
+                powinny zostać zdefiniowane: zakres dozwolonych znaków, liczba dozwolonych znaków, rozróżnialność małych i dużych liter.</li>
+            <li>Adres — określa bieżący adres zmiennej w pamięci.</li>
+            <li>Wartość — określa wartość przypisaną do zmiennej.</li>
+            <li>Typ — określa zbiór dopuszczalnych wartości, jakie zmienna może przyjmować.</li>
+            <li>Zakres widoczności — określa blok instrukcji, w których zmienna jest widoczna i można
+                się do niej odwołać.</li>
+            <li>Okres życia — określa czas, przez który zmienna istnieje. Przykładowo okres życia
+                zmiennej zadeklarowanej w funkcji zaczyna się od wejścia do funkcji i kończy się
+                w momencie zakończenia funkcji. Istnieją również zmienne zadeklarowane w funkcji,
+                które widoczne są tylko w tej funkcji, ale okres życia dotyczy całego czasu wykonania
+                programu.</li>
+        </ul>
+        <h1>Proste typy danych</h1>
+        <p><strong>Typ</strong>to zbiór wartości, które może przyjmować zmienna. Większość języków programowania ma zestaw typów prostych.</p>
+        <p><strong>Typ całkowity </strong>(int, integer) odpowiada liczbom całkowitym, ale mogą wystąpić jego
+            warianty związane z rozmiarem liczby (byte, short, long) i jej znakiem (signed, unsigned).</p>
+        <p><strong>Typy zmiennopozycyjne</strong>odpowiadają liczbom rzeczywistym (float, double).</p>
+        <p><strong>Typy znakowe</strong>przechowują informacje o znakach zapisane w kodzie ASCII lub coraz
+            częściej w Unicode (char, character).</p>
+        <p><strong>Typ logiczny</strong> przechowuje wartość logiczną Prawda lub Fałsz i jest zapisywany za
+            pomocą jednego bitu lub całego bajta.</p>
+        <p><strong>Typy stałoprzecinkowe</strong>mają ustaloną liczbę cyfr i miejsc po przecinku.</p>
+        <p>Z typów prostych można tworzyć typy złożone, na przykład rekordy, tablice, typy wyliczeniowe.</p>
+        <h1>Operatory</h1>
+        <p>Z każdym typem związana jest grupa operacji, które mogą zostać wykonane na wartościach tego typu. Przykładowo:</p>
+        <ul>
+            <li><strong>Typ całkowity</strong> — operacje dodawania (+), odejmowania (–), mnożenia (*), dzielenia (/).</li>
+            <li><strong>Typ logiczny</strong> — operacje koniunkcji (And), alternatywy (Or), negacji (Not).</li>
+            <li><strong>Typ znakowy</strong> — operacja łączenia tekstów (+).</li>
+        </ul>
+        <h1>Operacje wejścia-wyjścia</h1>
+        <p> Operacje wejścia-wyjścia pozwalają na pobieranie i wypisywanie danych z konsoli.
+        </p>
+        <h1>Instrukcje</h1>
+        <ul>
+            <li><strong>Sekwencja</strong> — ciąg kolejnych poleceń (rysunek 1).</li>
+            <li><strong>Instrukcja</strong> warunkowa — pozwala na rozgałęzienie przebiegu działania programu(rysunek 2). </li>
+        </ul>
+        <img src="img/1.png">
+        <img src="img/2.png">
+        <p>Jeżeli wartość wyrażenia jest prawdą, to zostanie wykonana Instrukcja2, w przeciwnym razie — Instrukcja1.</p>
+        <ul>
+            <li><strong>Pętla</strong> — pozwala na wykonywanie bloku programu kilkakrotnie w pętli, dopóki wartością sprawdzanego wyrażenia
+                jest prawda (rysunek 3).
+            </li>
+        </ul>
+        <p> Dopóki wartość wyrażenia jest prawdą, wykonywana jest
+            Instrukcja.</p>
+        <img src="img/3.png">
+        <h1>Przykład 1</h1>
+        <p> Użycie instrukcji warunkowej w języku C++:</p>
+        <img src="img/4.png">
+    </section>
+</main>
+<footer>
+    <p> Zespół Szkół Politechnicznych w Głogowie | Technik Informatyk 2026</p>
+</footer>
+
+</body>
+</html>

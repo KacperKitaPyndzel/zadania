@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Z28 - odległość 3D</title>
+</head>
+<body>
+<script>
+    let x1 = parseFloat(prompt('Podaj współrzędną x1:', '0'));
+    let y1 = parseFloat(prompt('Podaj współrzędną y1:', '0'));
+    let z1 = parseFloat(prompt('Podaj współrzędną z1:', '0'));
+    let x2 = parseFloat(prompt('Podaj współrzędną x2:', '1'));
+    let y2 = parseFloat(prompt('Podaj współrzędną y2:', '1'));
+    let z2 = parseFloat(prompt('Podaj współrzędną z2:', '1'));
+
+    let d = Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2) + Math.pow(z1 - z2, 2));
+
+    document.write('Punkt 1: (' + x1 + ', ' + y1 + ', ' + z1 + ')<br>');
+    document.write('Punkt 2: (' + x2 + ', ' + y2 + ', ' + z2 + ')<br><br>');
+    document.write('Odległość w 3D (d) = <strong>' + d.toFixed(2) + '</strong><br>');
+</script>
+</body>
+</html>

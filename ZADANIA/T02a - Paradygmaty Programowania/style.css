@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef1f5, #e8eaf6);
+    color: #273449;
+    line-height: 1.7;
+    padding: 30px 20px;
+}
+
+header {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 30px 40px;
+    background: white;
+    border-left: 6px solid #7657a6;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+    font-size: 32px;
+    color: #7657a6;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-size: 17px;
+    font-weight: normal;
+    color: #64748b;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    border-top: 5px solid #d9365e;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+section h1 {
+    font-size: 32px;
+    color: #7657a6;
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #eeeeee;
+}
+
+section p {
+    font-size: 16px;
+    color: #465366;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+section strong {
+    color: #273449;
+}
+
+section ul {
+    margin: 15px 0 25px 30px;
+    padding: 15px 25px;
+    background: #f8f7fb;
+    border-radius: 12px;
+}
+
+section li {
+    margin-bottom: 8px;
+    color: #465366;
+}
+
+section li::marker {
+    color: #d9365e;
+}
+
+footer {
+    max-width: 1200px;
+    width: 100%;
+    margin: 25px auto 0;
+    padding: 20px;
+    text-align: center;
+    color: #64748b;
+    font-size: 14px;
+    border-top: 1px solid #d8dce3;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    header {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    section h1 {
+        font-size: 26px;
+    }
+
+    section p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    section ul {
+        margin-left: 10px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}

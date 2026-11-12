@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background:
+            radial-gradient(circle at top left, #4f46e5 0%, transparent 35%),
+            radial-gradient(circle at bottom right, #9333ea 0%, transparent 35%),
+            #0f172a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+header {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+/* Stylizacja linii poziomej w nagłówku */
+header hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+main {
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+section p {
+    line-height: 1.7;
+    color: #dbeafe;
+    margin-bottom: 20px;
+}
+
+/* Stylizacja obrazka wzoru */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.9); /* Delikatne jasne tło pod wzorem, jeśli obrózek jest ciemny */
+    padding: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 15px;
+    color: #e2e8f0;
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 190px);
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 16px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 2px solid #334155;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 15px rgba(129, 140, 248, 0.35);
+}
+
+button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(135deg, #6366f1, #9333ea);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(147, 51, 234, 0.5);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Ukrywa sekcję wyniku, gdy jest pusta, aby nie straszyła pustą ramką */
+.wynik:empty {
+    display: none;
+}
+
+.wynik {
+    line-height: 2;
+    font-size: 17px;
+    border-left: 4px solid #818cf8;
+}
+
+.wynik b {
+    color: #a78bfa;
+    font-size: 20px;
+}
+
+/* RWD – responsywność dla urządzeń mobilnych */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    header,
+    section {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    button {
+        margin-top: 5px;
+    }
+}

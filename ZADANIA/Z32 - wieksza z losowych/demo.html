@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z32 - Wieksza z Losowych</title>
+</head>
+<body>
+<script>
+    let min = parseInt(prompt('Podaj min:',''))
+    let max = parseInt(prompt('Podaj max:',''))
+
+    let p1 =Math.floor(Math.random()*(max-min+1)+min)
+    let p2 =Math.floor(Math.random()*(max-min+1)+min)
+
+
+    document.write('Wylosowane liczby z przedziału :'+ min + 'do'+ max+ '<br>')
+    document.write('Wylosowana liczba pierwsza =' + p1 + '<br>')
+    document.write('Wylosowana liczba druga =' + p2 + '<br>')
+    if (p1>p2){
+        document.write(p1+'>'+p2)
+    } else if (p1<p2) {
+        document.write(p1+'<'+p2)
+    }  else {
+        document.write(p1+'='+p2)
+    }
+
+</script>
+</body>
+</html>

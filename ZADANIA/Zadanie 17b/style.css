@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background:
+            radial-gradient(circle at top left, #4f46e5 0%, transparent 35%),
+            radial-gradient(circle at bottom right, #9333ea 0%, transparent 35%),
+            #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Główny kontener formularza */
+fieldset {
+    width: 100%;
+    max-width: 650px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Tytuły sekcji (legendy) */
+legend {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a78bfa;
+    padding: 0 10px;
+}
+
+/* Zagnieżdżone fieldsety (np. projekt butów, kolory itp.) */
+fieldset fieldset {
+    margin-top: 20px;
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #a78bfa, #60a5fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Listy formularza */
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+/* Etykiety tekstowe */
+label {
+    display: inline-block;
+    color: #e2e8f0;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+/* Pola tekstowe, textarea i select */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    color: white;
+    font-size: 16px;
+    background: rgba(15, 23, 42, 0.8);
+    border: 2px solid #334155;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 15px rgba(129, 140, 248, 0.35);
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Style dla Radio i Checkboxów */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #818cf8;
+    transform: scale(1.2);
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+fieldset ul li label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Przyciski submit i reset */
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type="submit"] {
+    background: linear-gradient(135deg, #6366f1, #9333ea);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(147, 51, 234, 0.5);
+}
+
+input[type="reset"] {
+    background: rgba(51, 65, 85, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+input[type="reset"]:hover {
+    background: rgba(71, 85, 105, 1);
+    transform: translateY(-2px);
+}
+
+/* Responsywność dla urządzeń mobilnych */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    fieldset {
+        padding: 20px 15px;
+    }
+}

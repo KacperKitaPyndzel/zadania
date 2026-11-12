@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie Z36 - podzielność liczb (</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Podaj liczbę a', ''))
+    let b = parseFloat(prompt('Podaj liczbę b', ''))
+
+    if (isNaN(a) || isNaN(b)) {
+        document.write('Wpisz liczbę.')
+    }
+    else {
+        document.write('a = ' + a + '<br>')
+        document.write('b = ' + b + '<br>')
+
+        if (b === 0) {
+            document.write('Nie można dzielić przez 0.')
+        } else {
+            let dzielenie = a % b
+
+            if (dzielenie === 0) {
+                document.write('Liczba ' + a + ' jest podzielna przez ' + b)
+            } else {
+                document.write('Liczba ' + a + ' nie jest podzielna przez ' + b)
+            }
+        }
+    }
+</script>
+</body>
+</html>
