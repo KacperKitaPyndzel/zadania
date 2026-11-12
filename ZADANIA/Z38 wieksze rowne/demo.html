@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z38 - Wieksze rowne</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt(`Podaj a:`))
+    let b = parseFloat(prompt(`Podaj b:`))
+
+        document.write(`a =` + a +  `<br>`);
+        document.write(`b =` + b +  `<br>`);
+
+    if(isNaN(a) || isNaN(b)){
+        document.write(`Jedna z podanych wartosci nie jest liczba`)
+    }else {
+            if( parseInt(a) == a && parseInt(b) == b) {
+                if (a===b){
+                    document.write(`Obie liczby sa rowne`)
+                }else if (a>b){
+                    document.write(`Liczba a jest wieksza od liczby b`)
+                }else {
+                    document.write(`Liczba a jest mniejsza od lczby b`)
+                }
+
+            }else{
+                document.write(`Jedna liczba lub obie liczby sa rzeczywiste`)
+            }
+
+    }
+
+</script>
+
+</body>
+</html>

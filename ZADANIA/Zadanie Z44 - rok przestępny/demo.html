@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie Z44 - rok przestepny</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Podaj liczbę a:', ''))
+
+    if(isNaN(a)){
+        document.write(`Podano złą Wartość`)
+    }else if(a % 4 === 0 &&(a % 100 != 0 || a % 400 === 0)){
+        document.write(`Rok jest przestępny`)
+    }else{
+        document.write(`Rok jest nie przestępny`)
+    }
+
+</script>
+</body>
+</html>

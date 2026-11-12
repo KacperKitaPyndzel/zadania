@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z03 - średnia geometryczna</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Podaj liczbe a: ',''))
+    let b = parseFloat(prompt('Podaj liczbe b: ',''))
+    let c = parseFloat(prompt('Podaj liczbe c: ',''))
+    let d = parseFloat(prompt('Podaj liczbe d: ',''))
+
+    let  srednia_geometryczna = Math.pow((a*b*c*d),0.25)
+    document.write('a = '+a+'<br>')
+    document.write('b = '+b+'<br>')
+    document.write('c = '+c+'<br>')
+    document.write('d = '+d+'<br>')
+    document.write('Srednia geometryczna licz:'+ srednia_geometryczna+'<br>')
+    document.write('Srednia geometryczna liczb zaokrąglona do 3 miejsc po przecinku:'+ srednia_geometryczna.toFixed(3)+'<br>')
+</script>
+
+</body>
+</html>
